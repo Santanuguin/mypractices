@@ -390,3 +390,56 @@ body{
     }    
 }
 
+
+.test-container{
+    background-color: var(--background-color);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.test-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.test-title{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+.test-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 2rem;
+}
+.test-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(193, 188, 188);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    gap: 1rem;
+    transition: transform 0.3s ease , box-shadow 0.3s ease ;
+}
+ .test-card:hover{
+    transform: scale(1.05);
+    box-shadow:0 4px 8px rgba(0,0,0,0.2) ;
+    border: 1px solid blue;
+ }
+ .test-avater img{
+    height: 5rem;
+    width: 5rem;
+ }
+ .test-text{
+    font-size: 0.875rem;
+    color: #1f1a1ab6;
+    
+ }
+ .test-name{
+    font-size: 1rem;
+    color: var(--primary-color);
+ }
+ .test-desc{
+    font-size: 0.875rem;
+    color: #4a48488a;
+ }
